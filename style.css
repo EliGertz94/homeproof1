@@ -33,6 +33,26 @@
   header img.logo {
     height: 60px;
   }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  .logo-container .logo {
+    height: 60px;
+  }
+  
+  .logo-container .slogan {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #004080;
+    font-weight: 500;
+  }
+  
   
   nav ul {
     list-style: none;

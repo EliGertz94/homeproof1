@@ -27,6 +27,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
   }
   
   header img.logo {
@@ -36,9 +37,12 @@
   nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
   
   nav ul li a {
@@ -147,17 +151,20 @@
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
   
   .post img {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
   }
   
   .post-content {
     flex: 1;
+    min-width: 200px;
   }
   
   .hero {
@@ -191,5 +198,45 @@
   
   .cta-button:hover {
     background-color: #003366;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 1.8em;
+    }
+  
+    .hero p.subtitle {
+      font-size: 1em;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 16px;
+    }
+  
+    .cta-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    .post {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .post img {
+      max-width: 100%;
+    }
   }
   

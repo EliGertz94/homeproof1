@@ -9,12 +9,15 @@
 </head>
 <body>
 
-<header>
-  <h1>הבלוג של אלי</h1>
-  <p>מאמרים על בדק בית, אינסטלציה ושיפוצים</p>
-  <p><a href="index.html" style="color: #ccc;">חזרה לאתר</a></p>
-  
-</header>
+      
+ 
+<div id="header-placeholder"></div>
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data);
+</script>
+
 <div class="post">
     <img src="images/leak.jpg" alt="בדיקת רטיבות">
     <div class="post-content">

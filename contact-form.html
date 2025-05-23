@@ -1,0 +1,32 @@
+<section id="contact">
+    <h2>צור קשר</h2>
+    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" netlify>
+
+      <input type="hidden" name="form-name" value="contact" />
+  
+      <label>שם מלא:</label>
+      <input type="text" name="name" placeholder="שם מלא" required />
+  
+      <label>טלפון:</label>
+      <input type="tel" name="phone" placeholder="טלפון" required />
+  
+      <label>אימייל:</label>
+      <input type="email" name="email" placeholder="אימייל" required />
+  
+      <label>באיזה שירות אתה מעוניין?</label>
+      <select name="service" required>
+        <option value="">בחר שירות</option>
+        <option value="מיזוג אוויר">מיזוג אוויר</option>
+        <option value="אינסטלציה">אינסטלציה</option>
+        <option value="בדק בית">בדק בית</option>
+        <option value="שיפוצים כלליים">שיפוצים כלליים</option>
+        <option value="אחר">אחר</option>
+      </select>
+  
+      <label>פירוט חופשי (לא חובה):</label>
+      <textarea name="message" placeholder="כתוב לנו כל מה שחשוב לדעת..."></textarea>
+  
+      <button type="submit">שלח</button>
+    </form>
+  </section>
+  

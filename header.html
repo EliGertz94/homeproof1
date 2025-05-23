@@ -32,10 +32,18 @@
     
   </header>
   <body> <script>
-    function toggleMenu() {
-      const menu = document.getElementById("side-menu");
-      menu.style.width = (menu.style.width === "250px") ? "0" : "250px";
-    }
+   function toggleMenu() {
+  const menu = document.getElementById("side-menu");
+  const icon = document.querySelector(".mobile-menu-icon");
+
+  if (menu.style.width === "250px") {
+    menu.style.width = "0";
+    icon.innerHTML = "☰";
+  } else {
+    menu.style.width = "250px";
+    icon.innerHTML = "✖";
+  }
+}
   </script>
   </body>
   

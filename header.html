@@ -2,49 +2,32 @@
 <link rel="stylesheet" href="style.css">
 
 <header>
-    <div class="logo-container">
-        <a href="index.html"> <img src="images/logoTrans.png" alt="לוגו הום פרופ" class="logo"></a>
-        <h4 class="slogan">פתרונות מיזוג ואינסטלציה</h4>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#services">שירותים</a></li>
-        <li><a href="#why">למה בדק בית?</a></li>
-        <li><a href="#about">אודות</a></li>
-        <li><a href="#team">הצוות שלנו</a></li>
-        <li><a href="#faq">שאלות נפוצות</a></li>
-        <li><a href="blog.html">בלוג</a></li>
-        <li><a href="#contact">צור קשר</a></li>
-      </ul>
-    </nav>
-    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
-  
-    <div id="side-menu" class="side-menu">
-      <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-      <a href="#services">שירותים</a>
-      <a href="#why">למה בדק בית?</a>
-      <a href="#about">אודות</a>
-      <a href="#team">הצוות שלנו</a>
-      <a href="#faq">שאלות נפוצות</a>
-      <a href="blog.html">בלוג</a>
-      <a href="#contact">צור קשר</a>
-    </div>
-    
-  </header>
-  <body> <script>
-   function toggleMenu() {
-  const menu = document.getElementById("side-menu");
-  const icon = document.querySelector(".mobile-menu-icon");
-
-  if (menu.style.width === "250px") {
-    menu.style.width = "0";
-    icon.innerHTML = "☰";
-  } else {
-    menu.style.width = "250px";
-    icon.innerHTML = "✖";
-  }
-}
-  </script>
-  </body>
-  
-  
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="images/logoTrans.png" alt="לוגו הום פרופ" class="logo">
+    </a>
+    <h4 class="slogan">פתרונות מיזוג ואינסטלציה</h4>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#services">שירותים</a></li>
+      <li><a href="#why">למה בדק בית?</a></li>
+      <li><a href="#about">אודות</a></li>
+      <li><a href="#team">הצוות שלנו</a></li>
+      <li><a href="#faq">שאלות נפוצות</a></li>
+      <li><a href="blog.html">בלוג</a></li>
+      <li><a href="#contact">צור קשר</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-menu-icon">☰</div>
+  <div id="side-menu" class="side-menu">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="#services">שירותים</a>
+    <a href="#why">למה בדק בית?</a>
+    <a href="#about">אודות</a>
+    <a href="#team">הצוות שלנו</a>
+    <a href="#faq">שאלות נפוצות</a>
+    <a href="blog.html">בלוג</a>
+    <a href="#contact">צור קשר</a>
+  </div>
+</header>

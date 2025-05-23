@@ -263,9 +263,7 @@
 
   /* כפתור המבורגר */
 
-  css
-  Copy
-  Edit
+ 
   .mobile-menu-icon {
     display: none;
     font-size: 30px;
@@ -276,13 +274,13 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 999;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #f7f7f7;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
+    z-index: 999;
   }
   
   .side-menu a {
@@ -329,7 +327,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    min-height: 100px; /* ⬅️ Keep enough space even when nav disappears */
+    position: relative;
   }
   .logo-container {
     display: flex;

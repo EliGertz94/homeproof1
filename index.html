@@ -160,39 +160,6 @@
         });
     </script>
  
-
-<!-- <header>
-  <div class="logo-container">
-    <a href="index.html"> <img src="images/logoTrans.png" alt="לוגו הום פרופ" class="logo"></a>
-   
-    <h4 class="slogan">פתרונות מיזוג ואינסטלציה</h4>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#services">שירותים</a></li>
-      <li><a href="#why">למה בדק בית?</a></li>
-      <li><a href="#about">אודות</a></li>
-      <li><a href="#team">הצוות שלנו</a></li>
-      <li><a href="#faq">שאלות נפוצות</a></li>
-      <li><a href="blog.html">בלוג</a></li>
-      <li><a href="#contact">צור קשר</a></li>
-    </ul>
-  </nav>
-  <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
-
-  <div id="side-menu" class="side-menu">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-    <a href="#services">שירותים</a>
-    <a href="#why">למה בדק בית?</a>
-    <a href="#about">אודות</a>
-    <a href="#team">הצוות שלנו</a>
-    <a href="#faq">שאלות נפוצות</a>
-    <a href="blog.html">בלוג</a>
-    <a href="#contact">צור קשר</a>
-  </div>
-  
-
-</header> -->
 <section class="hero" style="
   width: 100%;
   position: relative;
@@ -218,7 +185,7 @@
 
   <div style="position: relative; z-index: 2;">
     <h1>ברוכים הבאים ל-HomeProof</h1>
-    <p class="subtitle">מומחים בהתקנה ותחזוקה של מערכות מיזוג אוויר – שירות אמין, מקצועי ואישי עד הבית.</p>
+    <p class="subtitle">מומחים בהתקנה ותחזוקה של מערכות מיזוג אוויר ואינסטלציה – שירות אמין, מקצועי ואישי עד הבית.</p>
     <a href="#contact" class="cta-button">לקבלת הצעת מחיר</a>
   </div>
 </section>
@@ -246,10 +213,10 @@
   </div>
 </section>
 
-<section id="why">
+<!-- <section id="why">
   <h2>למה חשוב לעשות בדק בית?</h2>
   <p>בדק בית הוא בדיקה הנדסית שיכולה לחסוך עשרות אלפי שקלים. אנו מגלים ליקויים סמויים לפני רכישה או אכלוס הדירה.</p>
-</section>
+</section> -->
 
 <section id="team">
   <h2>הצוות שלנו</h2>
@@ -291,7 +258,7 @@
   </div>
 </section>
 
-<section id="contact">
+<!-- <section id="contact">
   <h2>צור קשר</h2>
   <p>טלפון: <a href="tel:0547281982">054-728-1982</a></p>
   <p>אימייל: <a href="mailto:eligerzman@gmail.com">eligerzman@gmail.com</a></p>
@@ -303,12 +270,21 @@
     <input type="email" name="email" placeholder="אימייל" required />
     <textarea name="message" placeholder="איך נוכל לעזור?" required></textarea>
     <button type="submit">שלח</button>
-  </form>
-</section>
+  </form> 
+</section> -->
+<section id="contact">
+    <div id="contact-placeholder"></div>
+    </section>
+    <script>
+      fetch('contact-form.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('contact-placeholder').innerHTML = data);
+    </script>
+    
 
-<footer>
-  <p>© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
-</footer>
+    <footer>
+        <p>© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
+      </footer>
 
 </body>
 </html>

@@ -69,13 +69,17 @@
     <a href="article2.html" class="button">קרא עוד</a>
   </div>
 </div>
+<section id="contact">
 <div id="contact-placeholder"></div>
+</section>
 <script>
   fetch('contact-form.html')
     .then(res => res.text())
     .then(data => document.getElementById('contact-placeholder').innerHTML = data);
 </script>
 
-
+<footer>
+    <p>© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
+  </footer>
 </body>
 </html>

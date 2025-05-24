@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>איך לזהות תקלות מוקדמות במזגן? - בלוג HomeProof</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      direction: rtl;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #004466;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        const icon = document.querySelector(".mobile-menu-icon");
+        const menu = document.getElementById("side-menu");
+        icon.addEventListener("click", () => {
+          if (menu.style.width === "250px") {
+            menu.style.width = "0";
+            icon.innerHTML = "☰";
+          } else {
+            menu.style.width = "250px";
+            icon.innerHTML = "✖";
+          }
+        });
+        const closeBtn = menu.querySelector(".closebtn");
+        closeBtn.addEventListener("click", () => {
+          menu.style.width = "0";
+          icon.innerHTML = "☰";
+        });
+      });
+  </script>
+
+  <section>
+    <h1>איך לזהות תקלות מוקדמות במזגן?</h1>
+    <p>רובנו מפעילים את המזגן רק כשבאמת צריך – בימי הקיץ החמים או בלילות קרים במיוחד – אבל דווקא בגלל זה, אנחנו לא תמיד שמים לב כשמשהו מתחיל להשתבש. תקלות במזגן לרוב לא מופיעות ביום אחד. הן מתחילות בסימנים קטנים, שהרבה אנשים מתעלמים מהם – עד שהבעיה הופכת ליקרה, מסובכת, ולעיתים גם בלתי הפיכה. החדשות הטובות? אפשר למנוע את זה אם יודעים למה לשים לב.</p>
+
+    <p>אחד הסימנים הבולטים לתקלה מתקרבת הוא ירידה בתפוקת הקירור או החימום. אם אתם מרגישים שהמזגן לא מקרר כמו פעם, למרות שהוא עובד הרבה זמן – זה יכול להעיד על חוסר בגז, סתימה במעבה או מאייד, או בעיה בזרימת האוויר. גם אם המזגן מגיע לטמפרטורה הרצויה, אבל עושה את זה לאט מהרגיל – זה נורת אזהרה.</p>
+
+    <p>רעשים חריגים הם עוד סימן חשוב. מזגן תקין בדרך כלל פועל בשקט יחסי. אם אתם שומעים זמזום מתמשך, רעידות, נקישות או שריקות – ייתכן שמשהו השתחרר, נשחק או שהמנוע עובד בעומס יתר. רעש הוא סימן מוקדם שחייבים לבדוק – במיוחד אם הוא מתגבר לאורך זמן.</p>
+
+    <p>ריח לא נעים שיוצא מהמזגן הוא גם אינדיקציה ברורה שמשהו לא תקין. ריח של עובש, טחב או "ריח חמוץ" קל – מעיד לרוב על פילטרים מלוכלכים, הצטברות לחות או אפילו התחלה של עובש בתוך היחידה. במקרים חמורים, זה גם עלול להשפיע על בריאות בני הבית.</p>
+    <div class="blog-image" style="text-align: center; margin: 30px 0;">
+        <img src="images/takalotMazgan.png" alt="מערכת מיזוג אוויר ביתית" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      </div>
+    <p>נזילות מים פנימיות הן תופעה שאסור להתעלם ממנה. לפעמים זה רק טיפטוף קטן מהיחידה הפנימית – אבל זה בדרך כלל מעיד על סתימה בצינור הניקוז, איטום לקוי או אפילו שיפוע לא נכון בהתקנה. חשוב להבין: מזגן לא אמור לטפטף לתוך הבית. אפילו טיפה אחת כבר שווה בדיקה מקצועית.</p>
+
+    <p>ואם המזגן "מתחיל מהלך" אבל נכבה אחרי כמה שניות, או אם הוא פועל רק לפרקים בלי סיבה – ייתכן שמדובר בתקלה בלוח הפיקוד, בחיישנים או במתח החשמלי. אלה תקלות שדורשות אבחון מהיר, כי הן עלולות לגרום לקצר או לנזק כבד במדחס.</p>
+
+    <p>בסופו של דבר, כל סימן קטן – רעש, ריח, ירידה בביצועים – הוא בעצם ניסיון של המזגן להגיד לכם "אני צריך עזרה". הקשבה לסימנים האלה, אפילו אם הם נראים שוליים, יכולה לחסוך לכם הרבה מאוד כסף ועוגמת נפש בהמשך.</p>
+
+    <p>אנחנו ממליצים לבצע בדיקה תקופתית אחת לשנה, במיוחד לפני תחילת הקיץ. ואם אתם מזהים תסמין חשוד – אל תחכו. שלחו לנו תמונה, תיאור או סרטון קצר בוואטסאפ או התקשרו ונשמח לעזור באבחון ראשוני – בלי עלות ובלי התחייבות.</p>
+  </section>
+
+  <section id="contact-shortcuts" style="text-align: center; padding: 40px 20px; background-color: #f0f4f8;">
+    <h2 style="margin-bottom: 30px;">ליצירת קשר מהיר</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <a href="tel:0547281982" style="font-size: 24px; color: #0079c1; text-decoration: none;" title="התקשר אלינו">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://wa.me/972547281982" target="_blank" style="font-size: 24px; color: #25D366; text-decoration: none;" title="שלח הודעה בוואטסאפ">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:eligerzman@gmail.com" style="font-size: 24px; color: #555; text-decoration: none;" title="שלח לנו מייל">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61576630141828" target="_blank" style="font-size: 24px; color: #1877F2; text-decoration: none;" title="דף הפייסבוק שלנו">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
+  </footer>
+</body>
+</html>

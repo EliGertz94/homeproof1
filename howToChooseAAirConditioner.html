@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>איך לבחור מזגן מתאים לחדר שלך - בלוג HomeProof</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      direction: rtl;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #004466;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        const icon = document.querySelector(".mobile-menu-icon");
+        const menu = document.getElementById("side-menu");
+        icon.addEventListener("click", () => {
+          if (menu.style.width === "250px") {
+            menu.style.width = "0";
+            icon.innerHTML = "☰";
+          } else {
+            menu.style.width = "250px";
+            icon.innerHTML = "✖";
+          }
+        });
+        const closeBtn = menu.querySelector(".closebtn");
+        closeBtn.addEventListener("click", () => {
+          menu.style.width = "0";
+          icon.innerHTML = "☰";
+        });
+      });
+  </script>
+
+  <section>
+    <h1>איך לבחור מזגן מתאים לחדר שלך?</h1>
+    
+ <p>כדי לבחור מזגן בעוצמה נכונה, מקובל לחשב את כוח הסוס הנדרש לפי שטח החדר. חדר קטן בשטח של עד 10 מטרים רבועים בדרך כלל ידרוש מזגן בעוצמה של 1 כוח סוס, שזה בערך 9,000 BTU. חדרים בגודל בינוני, בין 11 ל־14 מ"ר, ייהנו מביצועים טובים יותר עם מזגן של 1.25 עד 1.5 כ"ס. אם מדובר בחדר גדול יותר או חלל פתוח, כמו מטבח עם סלון משולב, כדאי כבר לחשוב על מזגן בעוצמה של 2 כ"ס ומעלה. בסלון גדול במיוחד או בדירות סטודיו פתוחות – ייתכן שיהיה צורך במזגן של 2.5 כ"ס ואפילו יותר, תלוי בתנאים בשטח.</p>
+    <p>
+      הדבר הראשון שאנשים בודקים כשהם רוצים להתקין מזגן הוא גודל החדר. זו התחלה נכונה – ככל שהחדר גדול יותר, כך נדרש מזגן חזק יותר – אבל חשוב להבין שגודל החדר הוא רק חלק אחד מהשיקולים, ולעיתים אפילו לא החשוב ביותר. ייתכן ששני חדרים בגודל זהה ידרשו מזגנים שונים לחלוטין, רק בגלל תנאים סביבתיים שמשפיעים על אופן החימום או הקירור של החלל. חדר שינה שפונה לכיוון דרום, עם שמש ישירה ברוב שעות היום, יתחמם הרבה יותר מאותו חדר בדיוק שפונה לצפון ולא מקבל כמעט שמש. גם גג מעל, חלון פנורמי, דלת למרפסת או אפילו קיר זכוכית גדול – כל אלה מגדילים משמעותית את העומס התרמי שהמזגן יצטרך להתמודד איתו.
+    </p>
+    <p>
+      מעבר לכך, איכות הבידוד בבית היא דבר קריטי. דירות ישנות, בעיקר כאלה שבנויות עם קירות חיצוניים דקים או תקרות שלא כוללות שכבת בידוד, מאפשרות חום וקור לחדור בקלות פנימה. במקרים כאלה, גם אם התקנת מזגן "לפי הטבלה", הוא לא בהכרח יספק את התוצאה שציפית לה. המזגן יפעל כל הזמן, יתקשה להגיע לטמפרטורה הרצויה, ויבזבז הרבה יותר חשמל – ובסופו של דבר גם יישחק מהר יותר.
+    </p>
+    <div class="blog-image" style="text-align: center; margin: 30px 0;">
+        <img src="images/mazgan.jpg" alt="מערכת מיזוג אוויר ביתית" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      </div>
+    <p>
+      סוג המזגן שאתה בוחר משפיע גם הוא. אם מדובר בחדר אחד בלבד, לרוב מזגן עילי רגיל יספיק. לעומת זאת, אם אתה מתכנן למזג כמה חדרים, או אם יש לך הגבלה במספר המקומות בהם אפשר לשים מנועים חיצוניים, ייתכן שמזגן מולטי אינוורטר יתאים יותר. זהו פתרון שמאפשר לחבר מספר יחידות פנימיות למנוע אחד חיצוני – והוא גם חסכוני, שקט ואסתטי. אנשים רבים שואלים גם על אינוורטר – מדובר בטכנולוגיה מתקדמת ששומרת על טמפרטורה יציבה תוך כדי חיסכון בצריכת החשמל, במיוחד אם אתה מפעיל את המזגן למשך שעות ארוכות ביום או בלילה.
+    </p>
+    <p>
+      מעבר למאפיינים של המזגן עצמו, חשוב להבין גם את ההיבטים הטכניים של ההתקנה. לעיתים קרובות אני מגיע ללקוחות שכבר רכשו מזגן, אבל לא חשבו על איפה יניחו את היחידה החיצונית, האם יש גישה לניקוז תקין, והאם יש תשתית חשמלית מתאימה. ניקוז לא מסודר, למשל, עלול לגרום לנזילות וריח רע תוך מספר שבועות. גם מיקום היחידה הפנימית בחדר צריך להיות מתוכנן – לא ישר מול הפנים במיטה, לא מעל מחשב, ולא במקום שלא מאפשר זרימת אוויר נוחה.
+    </p>
+    <p>
+      לכן, בחירה נכונה של מזגן לא מסתכמת רק במספרים – אלא דורשת הבנה של תנאי החדר, מיקום, שימוש, ושאיפה לנוחות מקסימלית לאורך זמן. אני תמיד אומר שלבחור מזגן זה לא לבחור מוצר – זה לבחור פתרון. ואם תשלחו לי מידות, כיוון, או אפילו תמונה של החדר, אוכל להמליץ בדיוק על מה שמתאים לכם – בלי התחייבות ובלי התחכמויות.
+    </p>
+   
+  </section>
+
+  <section id="contact-shortcuts" style="text-align: center; padding: 40px 20px; background-color: #f0f4f8;">
+    <h2 style="margin-bottom: 30px;">ליצירת קשר מהיר</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <a href="tel:0547281982" style="font-size: 24px; color: #0079c1; text-decoration: none;" title="התקשר אלינו">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://wa.me/972547281982" target="_blank" style="font-size: 24px; color: #25D366; text-decoration: none;" title="שלח הודעה בוואטסאפ">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="index.html#contact" style="font-size: 24px; color: #555; text-decoration: none;" title="שלח לנו הודעה">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61576630141828" target="_blank" style="font-size: 24px; color: #1877F2; text-decoration: none;" title="דף הפייסבוק שלנו">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
+  </footer>
+</body>
+</html>

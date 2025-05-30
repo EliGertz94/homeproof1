@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ריח רע מהמזגן? כך תטפלו בזה - בלוג HomeProof</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      direction: rtl;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #004466;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        const icon = document.querySelector(".mobile-menu-icon");
+        const menu = document.getElementById("side-menu");
+        icon.addEventListener("click", () => {
+          if (menu.style.width === "250px") {
+            menu.style.width = "0";
+            icon.innerHTML = "☰";
+          } else {
+            menu.style.width = "250px";
+            icon.innerHTML = "✖";
+          }
+        });
+        const closeBtn = menu.querySelector(".closebtn");
+        closeBtn.addEventListener("click", () => {
+          menu.style.width = "0";
+          icon.innerHTML = "☰";
+        });
+      });
+  </script>
+
+  <section>
+    <h1>ריח רע מהמזגן? כך תזהו את הסיבה ותנקו את האוויר בבית</h1>
+    <p>אין דבר יותר מתסכל מלהדליק את המזגן ביום חם – ולקבל זרם של אוויר שמריח כמו טחב, ביוב או אפילו עשן. ריח רע מהמזגן הוא לא רק מטרד – הוא סימן ברור לכך שמשהו במערכת לא תקין, ולעיתים הוא בכלל לא נובע מהמזגן עצמו. מזגן תקין אמור לפלוט אוויר נעים ונקי – לא ריח של מרתף ישן או לחות עומדת.</p>
+    <p>ברוב המקרים, מקור הריח הוא הצטברות של עובש, לחות ולכלוך ביחידה הפנימית של המזגן. כשהניקוז לא תקין, המים מצטברים בתחתית היחידה ויוצרים סביבה אידיאלית לגידול חיידקים, פטריות ועובש – הגורמים העיקריים לריח הלא נעים. גם פילטרים שלא נוקו זמן רב, במיוחד באזורים סמוכים למטבח, סופגים שומנים ואבק שמתחילים להירקב ולהפיץ ריח רע.</p>
+    <p>חשוב להבין שלעתים הבעיה אינה במזגן עצמו, אלא באוויר שהמזגן ממחזר. אם יש ריח ביוב מתמשך בבית, במיוחד מהשירותים או חדר הרחצה, סביר שהריח נובע ממערכת אוורור לא תקינה – והמזגן רק מפיץ אותו לכל שאר הבית. חוסר בסיפון, שסתום אוויר פגום, או וונטה שלא מחוברת כראוי לצינור השרשורי – כל אלה יכולים לאפשר לריחות לא רצויים להיכנס לחלל. במקרים כאלה המזגן "אשם" רק בהפצה, לא במקור.</p>
+    <p>במקרים חמורים יותר, כאשר הריח מזכיר שרוף או עשן, ייתכן שמדובר ברכיב חשמלי שניזוק או התחמם – ויש לעצור את השימוש ולפנות לטכנאי מקצועי באופן מיידי.</p>
+    <p>הפתרון מתחיל בניקוי יסודי של הפילטרים והמאייד עם מים פושרים וסבון עדין, ובדיקה שהניקוז זורם כראוי. אם הריח נמשך – כדאי לבדוק את מערכת האוורור של הבית. במקרים של חיבור שגוי לצנרת הביוב או אוורור לקוי, יש לטפל בתשתית עצמה כדי למנוע חזרת ריחות.</p>
+    <h2>אנחנו ב-Home Proof כאן בשבילכם</h2>
+    <p>ב-<strong>Home Proof</strong> אנו מציעים שירות כולל: אבחון מדויק של מקור הריח, טיפול יסודי במזגן כולל ניקוי וחיטוי, ובמידת הצורך – תכנון והתקנה מקצועית של מערכת אוורור חדשה לבית. אנו יודעים לזהות האם מדובר בתקלה פנימית במזגן או בבעיה במבנה עצמו, ומבצעים את התיקונים בסטנדרט הגבוה ביותר.</p>
+    <p>אם המזגן שלכם התחיל להפיץ ריח לא נעים – אל תתעלמו. צרו איתנו קשר ונחזיר לכם את התחושה של אוויר נקי, רענן ובריא.</p>
+  </section>
+
+  <section id="contact-shortcuts" style="text-align: center; padding: 40px 20px; background-color: #f0f4f8;">
+    <h2 style="margin-bottom: 30px;">ליצירת קשר מהיר</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      <a href="tel:0547281982" style="font-size: 24px; color: #0079c1; text-decoration: none;" title="התקשר אלינו">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://wa.me/972547281982" target="_blank" style="font-size: 24px; color: #25D366; text-decoration: none;" title="שלח הודעה בוואטסאפ">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="index.html#contact" style="font-size: 24px; color: #555; text-decoration: none;" title="שלח לנו הודעה">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61576630141828" target="_blank" style="font-size: 24px; color: #1877F2; text-decoration: none;" title="דף הפייסבוק שלנו">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p style="text-align: center; padding: 20px; color: #777;">© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
+  </footer>
+</body>
+</html>

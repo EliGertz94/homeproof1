@@ -1,7 +1,7 @@
 // 1. הגדר את כתובת הפרויקט וה-API KEY שלך מסופבייס
-const SUPABASE_URL = 'https://gbjlrzoaxpnbymneweep.supabase.co';
+const SUPABASE_URL = '';
 
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdiamxyem9heHBuYnltbmV3ZWVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgzNTA5NjksImV4cCI6MjA2MzkyNjk2OX0.C2DdKDv0peVuEYeD20taTr8bve1si3r4PVluZqqOTyw';
+const SUPABASE_KEY = ''
 
 
 const script = document.createElement('script');

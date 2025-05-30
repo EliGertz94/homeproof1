@@ -112,8 +112,15 @@
 
 
 
-  <footer>
-    <p>© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
+<footer>
+  <div id="footer-placment"></div>
   </footer>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('footer-placment').innerHTML = data;
+      });
+  </script>
 </body>
 </html>

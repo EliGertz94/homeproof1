@@ -284,6 +284,7 @@
 <section id="contact">
 <section id="contact-shortcuts" style="text-align: center; padding: 40px 20px; background-color: #f0f4f8;">
   <h2 style="margin-bottom: 30px;">ליצירת קשר מהיר</h2>
+  <h3 style="margin-bottom: 30px;">אנחנו בכל גוש דן</h3>
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
 
     <!-- טלפון -->
@@ -320,10 +321,18 @@
         .then(data => document.getElementById('contact-placeholder').innerHTML = data);
     </script>
     
+    
 
-    <footer>
-        <p>© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
-      </footer>
+<footer>
+<div id="footer-placment"></div>
+</footer>
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placment').innerHTML = data;
+    });
+</script>
 
 </body>
 </html>

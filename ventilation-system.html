@@ -52,7 +52,14 @@
   </section>
 
   <footer>
-    <p style="text-align: center; padding: 20px; color: #777;">© 2025 HomeProof מיזוג אוויר ואחזקה - כל הזכויות שמורות</p>
-  </footer>
+    <div id="footer-placment"></div>
+    </footer>
+    <script>
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-placment').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

@@ -26,6 +26,36 @@
       background-color: #007BFF;
       color: white;
     }
+
+    #pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #007BFF;
+  border-radius: 50px;
+  background-color: white;
+  color: #007BFF;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 40px;
+}
+
+#pagination button:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+#pagination button.active {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+}
+
   </style>
 </head>
 <body>
@@ -86,11 +116,13 @@
   </div>
 
   <div id="posts-container"></div>
-
+  <div id="pagination"></div>
   <script src="JS/blog.js"></script>
 
   <section id="contact">
     <div id="contact-placeholder"></div>
+  
+
   </section>
   <script>
     fetch('contact-form.html')

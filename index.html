@@ -93,11 +93,58 @@
       flex-wrap: wrap;
       gap: 20px;
     }
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 8px;
-    }
+   .gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* אופציונלי – שומר על יחס נכון גם כשיש חיתוך */
+}
+
+
+.gallery-item {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* white overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #004466;
+  font-weight: bold;
+  font-size: 1.2em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.02);
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+
     form input, form textarea {
       width: 100%;
       padding: 10px;
@@ -235,22 +282,26 @@
   </div>
 </section>
 
-<!-- <section id="why">
-  <h2>למה חשוב לעשות בדק בית?</h2>
-  <p>בדק בית הוא בדיקה הנדסית שיכולה לחסוך עשרות אלפי שקלים. אנו מגלים ליקויים סמויים לפני רכישה או אכלוס הדירה.</p>
-</section> -->
 
 <section id="team">
   <h2>הצוות שלנו</h2>
   <p>צוות מקצועי ומנוסה במיזוג אוויר, אינסטלציה, בדק בית ושיפוצים. עובדים לפי תקנים מחמירים, עם דגש על שירות אישי, אמינות וניקיון עבודה.</p>
 </section>
-
 <section id="gallery">
   <h2>גלריית עבודות</h2>
   <div class="gallery">
-    <img src="https://via.placeholder.com/300x200?text=התקנת+מזגן" alt="התקנת מזגן">
-    <img src="https://via.placeholder.com/300x200?text=בדק+בית" alt="בדק בית">
-    <img src="https://via.placeholder.com/300x200?text=שיפוץ+אמבטיה" alt="שיפוץ אמבטיה">
+    <div class="gallery-item">
+      <img src="images/hvac_airways.jpg" alt="פתרונות מיזוג וקירור בפרויקטים">
+      <div class="overlay">פתרונות מיזוג וקירור בפרויקטים</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/havc_roof.jpg" alt="צ'ילרים פרויקט">
+      <div class="overlay">צ'ילרים</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/hvac_ceiling.jpg" alt="פתרונות מיזוג">
+      <div class="overlay">פתרונות מיזוג</div>
+    </div>
   </div>
 </section>
 
